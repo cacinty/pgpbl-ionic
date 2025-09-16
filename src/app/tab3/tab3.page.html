@@ -1,17 +1,121 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Ionic Components
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-item>
+      <ion-badge slot="start">1</ion-badge>
+      <ion-label>Badge Components</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-badge slot="end">22</ion-badge>
+      <ion-label>Badge in end slot</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-badge slot="start">2</ion-badge>
+      <ion-label>Breadcrumb Components</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-breadcrumbs>
+        <ion-breadcrumb href="#home">Home</ion-breadcrumb>
+        <ion-breadcrumb href="#electronics">Electronics</ion-breadcrumb>
+        <ion-breadcrumb href="#cameras">Cameras</ion-breadcrumb>
+        <ion-breadcrumb href="#film">Film</ion-breadcrumb>
+      </ion-breadcrumbs>
+    </ion-item>
+  </ion-list>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-list>
+    <ion-item>
+      <ion-badge slot="start">3</ion-badge>
+      <ion-label>Card Components</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-badge slot="start">4</ion-badge>
+      <ion-label>Check Box Components</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>I agree to the terms and conditions</ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-badge slot="start">5</ion-badge>
+      <ion-label>Date Time Components</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-datetime value="2022-04-21T00:00:00" min="2022-03-01T00:00:00" max="2022-05-31T23:59:59"></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-badge slot="start">6</ion-badge>
+      <ion-label>Button Components</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-button>Default</ion-button>
+      <ion-button color="primary">Primary</ion-button>
+      <ion-button color="secondary">Secondary</ion-button>
+      <ion-button color="tertiary">Tertiary</ion-button>
+      <ion-button color="success">Success</ion-button>
+      <ion-button color="warning">Warning</ion-button>
+      <ion-button color="danger">Danger</ion-button>
+      <ion-button color="light">Light</ion-button>
+      <ion-button color="medium">Medium</ion-button>
+      <ion-button color="dark">Dark</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-badge slot="start">7</ion-badge>
+      <ion-label>Input Components</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-list>
+        <ion-item>
+          <ion-input label="Default input"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Name" placeholder="Enter company name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Email" placeholde="ajeng@gmail.com"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Phone" value="0888"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-item>
+  </ion-list>
+
+
+
 </ion-content>
