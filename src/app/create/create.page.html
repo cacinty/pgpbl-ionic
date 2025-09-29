@@ -1,14 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/tabs/maps"></ion-back-button>
+      <ion-back-button defaultHref="/maps"></ion-back-button>
     </ion-buttons>
-    <ion-title>createpoint</ion-title>
+    <ion-title>{{ title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div id="mapcreate" style="height: 600px;"></div>
+
+  <div id="mapcreate" style="height: 650px;"></div>
 
   <ion-item>
     <ion-label position="floating">Name</ion-label>

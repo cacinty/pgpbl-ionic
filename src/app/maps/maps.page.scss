@@ -1,0 +1,17 @@
+
+.delete-icon {
+  color: red;
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: blue;
+  cursor: pointer;
+}
+
+.popup-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+}

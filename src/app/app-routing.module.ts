@@ -9,7 +9,8 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./splashscreen/splashscreen.module').then( m => m.SplashscreenPageModule)
-  },  {
+  },
+  {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
@@ -22,10 +23,13 @@ const routes: Routes = [
     loadChildren: () => import('./maps/maps.module').then( m => m.MapsPageModule)
   },
   {
-    path: 'createpoint',
-    loadChildren: () => import('./createpoint/createpoint.module').then( m => m.CreatepointPageModule)
+    path: 'create/:id',
+    loadChildren: () => import('./create/create.module').then( m => m.CreatePageModule)
+  },
+  {
+    path: 'create',
+    loadChildren: () => import('./create/create.module').then( m => m.CreatePageModule)
   }
-
 
 ];
 @NgModule({
